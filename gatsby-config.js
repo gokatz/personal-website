@@ -154,7 +154,7 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: siteConfig.title,
-        short_name: siteConfig.title,
+        short_name: 'gokatz',
         start_url: '/',
         background_color: '#FFF',
         theme_color: '#F7A046',
