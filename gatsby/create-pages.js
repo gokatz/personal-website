@@ -47,6 +47,30 @@ const createPages = async ({ graphql, actions }) => {
     }
   `);
 
+  // createPage({
+  //   path: '/',
+  //   component: path.resolve('./src/templates/home-template.js'),
+  //   context: { slug: '/' }
+  // });
+
+  createPage({
+    path: '/projects',
+    component: path.resolve('./src/templates/projects-template.js'),
+    context: { slug: '/projects' }
+  });
+
+  createPage({
+    path: '/oss',
+    component: path.resolve('./src/templates/oss-template.js'),
+    context: { slug: '/oss' }
+  });
+
+  createPage({
+    path: '/profile',
+    component: path.resolve('./src/templates/projects-template.js'),
+    context: { slug: '/profile' }
+  });
+
   const { edges } = result.data.allMarkdownRemark;
 
   _.each(edges, (edge) => {
@@ -62,6 +86,12 @@ const createPages = async ({ graphql, actions }) => {
         component: path.resolve('./src/templates/post-template.js'),
         context: { slug: edge.node.fields.slug }
       });
+    } else if (_.get(edge, 'node.frontmatter.template') === 'project') {
+      createPage({
+        path: edge.node.fields.slug,
+        component: path.resolve('./src/templates/post-template.js'),
+        context: { slug: edge.node.fields.slug }
+      });
     }
   });
 
@@ -70,6 +100,5 @@ const createPages = async ({ graphql, actions }) => {
   await createCategoriesPages(graphql, actions);
   await createPostsPages(graphql, actions);
 };
-
 
 module.exports = createPages;

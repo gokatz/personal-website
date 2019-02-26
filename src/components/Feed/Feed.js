@@ -12,15 +12,38 @@ const Feed = ({ edges }) => (
             {moment(edge.node.frontmatter.date).format('MMMM YYYY')}
           </time>
           <span className={styles['feed__item-meta-divider']} />
-          <span className={styles['feed__item-meta-category']}>
-            <Link to={edge.node.fields.categorySlug} className={styles['feed__item-meta-category-link']}>{edge.node.frontmatter.category}</Link>
-          </span>
+          {
+            edge.node.frontmatter.template === 'post'
+              ? (
+                <span className={styles['feed__item-meta-category']}>
+                  <Link to={edge.node.fields.categorySlug} className={styles['feed__item-meta-category-link']}>{edge.node.frontmatter.category}</Link>
+                </span>
+              )
+              : ''
+          }
         </div>
         <h2 className={styles['feed__item-title']}>
-          <Link className={styles['feed__item-title-link']} to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link>
+          {
+            edge.node.frontmatter.template === 'post'
+              ? <Link className={styles['feed__item-title-link']} to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link>
+              : edge.node.frontmatter.title
+          }
         </h2>
         <p className={styles['feed__item-description']}>{edge.node.frontmatter.description}</p>
-        <Link className={styles['feed__item-readmore']} to={edge.node.fields.slug}>Read</Link>
+        {
+          edge.node.frontmatter.template === 'post'
+            ? <Link className={styles['feed__item-readmore']} to={edge.node.fields.slug}>Read</Link>
+            : ''
+        }
+        {
+          edge.node.frontmatter.links && edge.node.frontmatter.links.length
+            ? (
+              edge.node.frontmatter.links.map((linkObj) => (
+                <a href={linkObj.link} target="_blank" className={styles['feed__item-projectlink']}> {linkObj.title} </a>
+              ))
+            )
+            : ''
+        }
       </div>
     ))}
   </div>

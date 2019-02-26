@@ -1,9 +1,10 @@
+
 ---
 title: Perfecting the Art of Perfection
 date: "2016-09-01T23:46:37.121Z"
-template: "post"
+template: "post-sample"
 draft: false
-slug: "/posts/perfecting-the-art-of-perfection/"
+slug: "/blog/perfecting-the-art-of-perfection/"
 category: "Design Inspiration"
 tags:
   - "Handwriting"

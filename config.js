@@ -1,38 +1,41 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-  copyright: '© All rights reserved.',
+  url: 'https://gokatz.me',
+  title: 'Gokul Kathirvel',
+  subtitle: 'A fellow human 💕 Love building things over web... 💕 doing Ember and Vue @zoho!!! Curated @emberjstweet 🐹🤖 with 🔥',
+  // copyright: '© All rights reserved.',
+  copyright: '',
   disqusShortname: '',
-  postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  postsPerPage: 5,
+  googleAnalyticsId: 'UA-104177053-2',
   menu: [
     {
-      label: 'Articles',
+      label: 'Blog',
       path: '/'
     },
     {
-      label: 'About me',
-      path: '/pages/about'
+      label: 'Projects',
+      path: '/projects'
     },
     {
-      label: 'Contact me',
-      path: '/pages/contacts'
-    }
+      label: 'OSS Love',
+      path: '/oss'
+    },
+    // {
+    //   label: 'Profile',
+    //   path: '/profile'
+    // }
   ],
   author: {
-    name: 'John Doe',
+    name: 'Gokul Kathirvel',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: 'A fellow human 💕 Love building things over web... 💕 doing Ember and Vue @zoho!!! Curated @emberjstweet 🐹🤖 with 🔥',
     contacts: {
-      email: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '#',
-      vkontakte: '#'
+      email: 'gokulkathirvel@live.com',
+      twitter: '_gokatz',
+      github: 'gokatz',
+      linkedin: 'in/gokulkathirvel'
     }
   }
 };

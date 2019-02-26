@@ -6,7 +6,7 @@ import Feed from '../components/Feed';
 import Page from '../components/Page';
 import Pagination from '../components/Pagination';
 
-const IndexTemplate = ({ data, pageContext }) => {
+const ProjectTemplate = ({ data, pageContext }) => {
   const {
     title: siteTitle,
     subtitle: siteSubtitle
@@ -40,7 +40,7 @@ const IndexTemplate = ({ data, pageContext }) => {
 };
 
 export const query = graphql`
-  query IndexTemplate($postsLimit: Int!, $postsOffset: Int!) {
+  query ProjectTemplate {
     site {
       siteMetadata {
         title
@@ -48,9 +48,7 @@ export const query = graphql`
       }
     }
     allMarkdownRemark(
-        limit: $postsLimit,
-        skip: $postsOffset,
-        filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } },
+        filter: { frontmatter: { template: { eq: "project" }, draft: { ne: true } } },
         sort: { order: DESC, fields: [frontmatter___date] }
       ){
       edges {
@@ -62,6 +60,12 @@ export const query = graphql`
           frontmatter {
             title
             date
+            tags
+            links {
+              title
+              link
+            }
+            slug
             template
             category
             description
@@ -72,4 +76,4 @@ export const query = graphql`
   }
 `;
 
-export default IndexTemplate;
+export default ProjectTemplate;
