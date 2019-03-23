@@ -11,5 +11,5 @@ tags:
 links:
   - title: Chrome Store
     link: https://bit.ly/muze-ext
-description: " Manage and control multiple YouTube and SoundCloud tabs with ease! (more music services coming soon...)"
+description: " Manage and control multiple YouTube, SoundCloud, JioSaavn and Gaana tabs with ease! (more music services on its way...)"
 ---
