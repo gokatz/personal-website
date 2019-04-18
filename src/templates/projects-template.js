@@ -63,6 +63,7 @@ export const query = graphql`
             tags
             links {
               title
+              internal
               link
             }
             slug

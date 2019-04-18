@@ -4,7 +4,7 @@ import ReactDisqusComments from 'react-disqus-comments';
 
 export const PureComments = ({ data, postTitle, postSlug }) => {
   const {
-    siteUrl,
+    url: siteUrl,
     disqusShortname
   } = data.site.siteMetadata;
 
