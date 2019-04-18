@@ -47,6 +47,7 @@ export const Sidebar = (props) => (
                 github
                 email
                 linkedin
+                devto
               }
             }
           }

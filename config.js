@@ -35,7 +35,8 @@ module.exports = {
       email: 'gokulkathirvel@live.com',
       twitter: '_gokatz',
       github: 'gokatz',
-      linkedin: 'in/gokulkathirvel'
+      linkedin: 'in/gokulkathirvel',
+      devto: 'gokatz'
     }
   }
 };

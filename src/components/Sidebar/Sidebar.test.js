@@ -17,6 +17,7 @@ describe('Sidebar', () => {
                 twitter: '#',
                 github: '#',
                 linkedin: '#',
+                devto: '#',
               }
             },
             copyright: 'copyright',
