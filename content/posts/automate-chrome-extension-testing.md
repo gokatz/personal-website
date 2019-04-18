@@ -237,8 +237,8 @@ async function boot() {
     ]
   });
 
-  const page = await browser.newPage();
-  await page.waitFor(2000); // arbitrary wait time.
+  const dummyPage = await browser.newPage();
+  await dummyPage.waitFor(2000); // arbitrary wait time.
 
   const targets = await browser.targets();
   const extensionTarget = targets.find(({ _targetInfo }) => {
