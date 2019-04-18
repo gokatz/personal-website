@@ -6,7 +6,7 @@ module.exports = {
   subtitle: 'A fellow human 💕 Love building things over web... 💕 doing Ember and Vue @zoho!!! Curated @emberjstweet 🐹🤖 with 🔥',
   // copyright: '© All rights reserved.',
   copyright: '',
-  disqusShortname: '',
+  disqusShortname: 'gokatz',
   postsPerPage: 5,
   googleAnalyticsId: 'UA-104177053-2',
   menu: [
