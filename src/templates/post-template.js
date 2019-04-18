@@ -44,12 +44,16 @@ export const query = graphql`
       id
       html
       fields {
+        slug
         tagSlugs
       }
       frontmatter {
         date
+        template
         description
         tags
+        latestReleaseDate
+        version
         title
         canonical
       }

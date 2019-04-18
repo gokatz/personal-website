@@ -39,7 +39,13 @@ const Feed = ({ edges }) => (
           edge.node.frontmatter.links && edge.node.frontmatter.links.length
             ? (
               edge.node.frontmatter.links.map((linkObj) => (
-                <a href={linkObj.link} target="_blank" className={styles['feed__item-projectlink']}> {linkObj.title} </a>
+                <a
+                  key={linkObj.link}
+                  href={linkObj.link} target={linkObj.internal ? '' : '_blank'}
+                  className={styles['feed__item-projectlink']}
+                >
+                  {linkObj.title}
+                </a>
               ))
             )
             : ''

@@ -7,8 +7,8 @@ import styles from './Pagination.module.scss';
 const cx = classNames.bind(styles);
 
 const Pagination = ({
-  prevPagePath,
-  nextPagePath,
+  prevPagePath = '/',
+  nextPagePath = '/',
   hasNextPage,
   hasPrevPage
 }) => {
