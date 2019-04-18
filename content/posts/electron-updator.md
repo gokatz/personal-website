@@ -6,8 +6,8 @@ draft: false
 slug: "/blog/electron-autoupdater-101/"
 category: "Automation"
 tags:
-  - "Extension"
-  - "Automation"
+  - "extension"
+  - "automation"
   - "CI/CD"
 canonical: https://medium.com/@gokatz/electron-autoupdater-101-f5a268766e75
 description: "Setting up a auto-updater would be something significant in many case and this post is all about setting up a auto updater successfully!"

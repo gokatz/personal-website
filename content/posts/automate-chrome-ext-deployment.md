@@ -6,8 +6,8 @@ draft: false
 slug: "/blog/automate-your-chrome-extension-deployment-in-minutes/"
 category: "Automation"
 tags:
-  - "Extension"
-  - "Automation"
+  - "extension"
+  - "automation"
   - "CI/CD"
 canonical: https://dev.to/gokatz/automate-your-chrome-extension-deployment-in-minutes-48gb
 description: "Building a chrome extension is fun! But deployment is a bit tedious as it requires few manual processes. In this post, I’ll Show you how to automate the build, upload and publish process of your chrome extension in a matter of few minutes."
