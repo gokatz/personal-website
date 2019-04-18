@@ -9,7 +9,6 @@ tags:
   - "emberjs"
   - "js"
   - "performance"
-canonical: https://dev.to/gokatz/nil-pattern-perfmatters-3jjh
 description: "Setting up a auto-updater would be something significant in many case and this post is all about setting up a auto updater successfully!"
 ---
 

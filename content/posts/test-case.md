@@ -32,7 +32,7 @@ Things began to happen thereafter. The test case build for my branch failed that
 
 Yes, there was an issue in my code. I made changes to some common files to achieve few functionalities. That was the place where issues budded. Those common files have been shared by almost all the modules in my application. The changes went awesome for my feature (module) but unfortunately, not with all the modules 😑. Some of the other modules were broken like 
 
-![broken gif](https://thepracticaldev.s3.amazonaws.com/i/5uorey6txcvde39zmn43.gif)
+<!-- ![broken gif](https://thepracticaldev.s3.amazonaws.com/i/5uorey6txcvde39zmn43.gif) -->
 
 Thank whom-so-ever. I fixed the code to support all the modules. The questions rushing into my mind was, _What if we don't have test cases covering all modules?_, _What if the buggy code went production?_ The effects may be worse than I thought.
 

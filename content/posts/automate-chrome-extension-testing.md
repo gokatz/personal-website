@@ -322,7 +322,7 @@ jobs:
       - run: yarn test
 ```
 
-OoOHoO... Congrats again. We just automated our test process successfully 🔥🔥 Try to automate your existing and future extension's testing process and be calm on your future releases. The sample extension along with their (working) tests has been hosted in [GitHub](https://github.com/gokatz/greet-me-extension). If you need any help, you can refer the source code.
+OoOHoO... Congrats again. We just automated our test process successfully 🔥🔥 Try to automate your existing and future extension's testing process and be calm on your future releases. The sample extension along with their (working) tests has been hosted in [GitHub](https://github.com/gokatz/greet-me-extension). If you need any help, you can refer to the source code.
 
 Hope you find this piece of writing useful. If so, I wrote about automating the chrome extension deployment in your CI/CD process in this [blog post](https://gokatz.me/blog/automate-your-chrome-extension-deployment-in-minutes/). Check out if you are manually deploying your extension. This may be the time to automate that too 😉
 
