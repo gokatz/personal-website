@@ -81,7 +81,7 @@ On running this script, Chrome instance will be booted along with your extension
 
 ## Step 3: Go to the extension popup page
 
-Extension popup/index page will open when we click on the extension icon in the toolbar menu. The same page can be opened directly using the `chrome-extension` URL for the easier testing process. A normal extension page URL will be like `chrome-extension://qwertyasdfgzxcvbniuqwiugiqwdv/index.html`. This URL can be dissected into,
+Extension popup/index page will open when we click on the extension icon in the toolbar menu. The same page can be opened directly using the `chrome-extension` URL for the easier testing process. A normal extension page URL will be like chrome-extension://qwertyasdfgzxcvbniuqwiugiqwdv/index.html. This URL can be dissected into,
 
 * Extension Protocol (`chrome-extension`)
 * Extension ID (`qwertyasdfgzxcvbniuqwiugiqwdv`)
@@ -115,7 +115,7 @@ const extensionTarget = targets.find(({ _targetInfo }) => {
 });
 ``` 
 
-Once you fetch your extension target, we can extract the ID from the target URL. A sample background target url will be like, `chrome-extension://qwertyasdfgzxcvbniuqwiugiqwdv/background.html`. So, the extraction will be like:
+Once you fetch your extension target, we can extract the ID from the target URL. A sample background target url will be like, chrome-extension://qwertyasdfgzxcvbniuqwiugiqwdv/background.html. So, the extraction will be like:
 
 ```js
 const extensionUrl = extensionTarget._targetInfo.url || '';
