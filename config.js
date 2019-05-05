@@ -22,6 +22,10 @@ module.exports = {
       label: 'OSS Love',
       path: '/oss'
     },
+    {
+      label: 'Talks',
+      path: '/talks'
+    }
     // {
     //   label: 'Profile',
     //   path: '/profile'

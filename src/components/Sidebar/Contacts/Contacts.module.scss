@@ -3,6 +3,7 @@
 
 .contacts {
   @include margin-bottom(1);
+  margin-top: 1em;
 
   &__list {
     display: flex;

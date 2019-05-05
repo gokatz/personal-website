@@ -84,10 +84,12 @@
       border-radius: 15px;
       font-size: 13px;
       margin-right: 10px;
+      font-weight: bold;
+      letter-spacing: 0.4px;
 
       &:hover {
         background: #F7A046;
-        color: white;
+        color: #fff;
       }
     }
 
