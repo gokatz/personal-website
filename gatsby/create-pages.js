@@ -71,6 +71,12 @@ const createPages = async ({ graphql, actions }) => {
     context: { slug: '/profile' }
   });
 
+  createPage({
+    path: '/talks',
+    component: path.resolve('./src/templates/talks-template.js'),
+    context: { slug: '/talks' }
+  });
+
   const { edges } = result.data.allMarkdownRemark;
 
   _.each(edges, (edge) => {
@@ -87,6 +93,12 @@ const createPages = async ({ graphql, actions }) => {
         context: { slug: edge.node.fields.slug }
       });
     } else if (_.get(edge, 'node.frontmatter.template') === 'project') {
+      createPage({
+        path: edge.node.fields.slug,
+        component: path.resolve('./src/templates/post-template.js'),
+        context: { slug: edge.node.fields.slug }
+      });
+    } else if (_.get(edge, 'node.frontmatter.template') === 'talk') {
       createPage({
         path: edge.node.fields.slug,
         component: path.resolve('./src/templates/post-template.js'),
