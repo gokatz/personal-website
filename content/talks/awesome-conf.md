@@ -1,8 +1,9 @@
 ---
-title: Ember and Vue: How they share values? | Awesome Conf 2019
+title: Ember and Vue - How they share values?
 date: "2019-05-04T10:00:00.121Z"
 template: "talk"
 draft: false
+conf_name: Awesome Conf 2019
 # slug: "/projects/perfecting-the-art-of-perfection/"
 # category: "Design Inspiration"
 # tags:

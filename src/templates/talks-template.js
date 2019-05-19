@@ -70,6 +70,7 @@ export const query = graphql`
             template
             category
             description
+            conf_name
           }
         }
       }

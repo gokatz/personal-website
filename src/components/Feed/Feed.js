@@ -29,6 +29,11 @@ const Feed = ({ edges }) => (
               : edge.node.frontmatter.title
           }
         </h2>
+        {
+          edge.node.frontmatter.conf_name
+            ? <div style={{ fontSize: '18px' }}> <b> {edge.node.frontmatter.conf_name} </b> </div>
+            : ''
+        }
         <p className={styles['feed__item-description']}>{edge.node.frontmatter.description}</p>
         {
           edge.node.frontmatter.template === 'post'
