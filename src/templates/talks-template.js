@@ -8,8 +8,7 @@ import Pagination from '../components/Pagination';
 
 const TalkTemplate = ({ data, pageContext }) => {
   const {
-    title: siteTitle,
-    subtitle: siteSubtitle
+    title: siteTitle
   } = data.site.siteMetadata;
 
   const {
@@ -23,8 +22,15 @@ const TalkTemplate = ({ data, pageContext }) => {
   const { edges } = data.allMarkdownRemark;
   const pageTitle = currentPage > 0 ? `Posts - Page ${currentPage} - ${siteTitle}` : siteTitle;
 
+  const talksSummary = edges.reduce((summary, talk) => {
+    const fMatter = talk.node.frontmatter || {};
+    return `${summary}, ${fMatter.title} at ${fMatter.conf_name}`;
+  }, '');
+
+  const pageDescription = `Gokul kathirvel had attended few local meetup and conferences. Recent talks are${talksSummary} and few more`;
+
   return (
-    <Layout title={pageTitle} description={siteSubtitle}>
+    <Layout title={pageTitle} description={pageDescription}>
       <Sidebar />
       <Page>
         <Feed edges={edges} />

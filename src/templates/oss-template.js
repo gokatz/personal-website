@@ -8,8 +8,7 @@ import Pagination from '../components/Pagination';
 
 const ProjectTemplate = ({ data, pageContext }) => {
   const {
-    title: siteTitle,
-    subtitle: siteSubtitle
+    title: siteTitle
   } = data.site.siteMetadata;
 
   const {
@@ -23,8 +22,15 @@ const ProjectTemplate = ({ data, pageContext }) => {
   const { edges } = data.allMarkdownRemark;
   const pageTitle = currentPage > 0 ? `Posts - Page ${currentPage} - ${siteTitle}` : siteTitle;
 
+  const talksSummary = edges.reduce((summary, ossProject) => {
+    const fMatter = ossProject.node.frontmatter || {};
+    return `${summary}, ${fMatter.title}`;
+  }, '');
+
+  const pageDescription = `Gokul Kathirvel is maintaining few Open Source projects (OSS). Some of them are${talksSummary} and few more`;
+
   return (
-    <Layout title={pageTitle} description={siteSubtitle}>
+    <Layout title={pageTitle} description={pageDescription}>
       <Sidebar />
       <Page>
         <Feed edges={edges} />

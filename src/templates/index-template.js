@@ -23,8 +23,10 @@ const IndexTemplate = ({ data, pageContext }) => {
   const { edges } = data.allMarkdownRemark;
   const pageTitle = currentPage > 0 ? `Posts - Page ${currentPage} - ${siteTitle}` : siteTitle;
 
+  const siteDescription = `${siteSubtitle}. Gokul Kathirvel wrote few blogs on various topics. This page contains few of them`;
+
   return (
-    <Layout title={pageTitle} description={siteSubtitle}>
+    <Layout title={pageTitle} description={siteDescription}>
       <Sidebar />
       <Page>
         <Feed edges={edges} />

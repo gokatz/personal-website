@@ -8,8 +8,7 @@ import Pagination from '../components/Pagination';
 
 const ProjectTemplate = ({ data, pageContext }) => {
   const {
-    title: siteTitle,
-    subtitle: siteSubtitle
+    title: siteTitle
   } = data.site.siteMetadata;
 
   const {
@@ -23,8 +22,15 @@ const ProjectTemplate = ({ data, pageContext }) => {
   const { edges } = data.allMarkdownRemark;
   const pageTitle = currentPage > 0 ? `Posts - Page ${currentPage} - ${siteTitle}` : siteTitle;
 
+  const pageSummary = edges.reduce((summary, project) => {
+    const fMatter = project.node.frontmatter || {};
+    return `${summary}, ${fMatter.title}`;
+  }, '');
+
+  const pageDescription = `Gokul kathirvel has made few side projects at leisure time. Few projects are${pageSummary} and few more`;
+
   return (
-    <Layout title={pageTitle} description={siteSubtitle}>
+    <Layout title={pageTitle} description={pageDescription}>
       <Sidebar />
       <Page>
         <Feed edges={edges} />
