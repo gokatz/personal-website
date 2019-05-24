@@ -8,7 +8,7 @@ const Layout = ({ children, title, description, canonicalUrl }) => (
       <html lang="en" />
       <title>{title}</title>
       <meta name="description" content={description} />
-      <link href="https://fonts.googleapis.com/css?family=Lato|Muli|Work+Sans" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css?family=Lato|Work+Sans&display=swap" rel="stylesheet"></link>
       {
         canonicalUrl
           ? <link rel="canonical" href={canonicalUrl} ></link>
