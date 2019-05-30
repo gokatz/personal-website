@@ -12,9 +12,9 @@ tags:
 description: "My list of features and improvements that I love to see in Ember core framework in 2019"
 ---
 
-This is the first time I'm participating in Ember roadmap blog post series. I personally like Ember and it's abstractions to enable and increase productivity.
+This is the first time I'm participating in the Ember roadmap blog post series. I personally like Ember and it's abstractions to enable and increase productivity.
 
-In order to write this blog, I curated a list of things wrt documentation and communication in the ecosystem that can be improved. On checking the docs and guides, I'm really surprised that most of those points are already addressed in the Guides and API docs. That's really great to know. Thanks to all the core teams and the contributors.
+In order to write this blog, I curated a list of things WRT documentation and communication in the ecosystem that can be improved. On checking the docs and guides, I'm stunned that most of those points are already addressed in the Guides and API docs. That's excellent to know. Thanks to all the core teams and the contributors.
 
 Below is a list of few things that I love to see in the core framework and surrounding ecosystems in the coming years.
 
@@ -22,9 +22,9 @@ Below is a list of few things that I love to see in the core framework and surro
 
  One of the reasons Ember is not considered among modern frameworks (That's the bitter truth) is that we aim to build a full-fledged framework with all the batteries included and ended up as a fat baby. I personally love this nature of Ember as most of the web apps ended up adding these batteries at some point of development.
 
- However, when a developer from other framework or a new javascript developer evaluates frameworks, the bundle size will be a predominant deciding factor. So, tree shaking the framework modules until that's being used will have a great impact on the above-said evaluation. I love to see these such builds being the default one in future Ember apps.
+ However, when a developer from other framework or a new JavaScript developer evaluates frameworks, the bundle size will be a predominant deciding factor. So, tree shaking the framework modules until that's being used will have a great impact on the above-said evaluation. I love to see these such builds being the default one in future Ember apps.
 
-There are cases where I had to leave behind Ember for this reason despite Ember outperforms most other popular frameworks like React or Vue wrt. rendering speed
+There are cases where I had to leave behind Ember for this reason despite Ember outperforms most other popular frameworks like React or Vue WRT. rendering speed
 
 ## 2) Embroider
 
@@ -32,11 +32,11 @@ There are cases where I had to leave behind Ember for this reason despite Ember 
 
 ## 3) Docs around Ember CLI and Broccoli internals
 
- Developing Addon that is not presentational is really a harder process in Ember. The actual [API documentation](https://ember-cli.com/api/) for CLI is really not helpful to accomplish a task easily (TBH, that's impossible). I usually refer to other similar addons that utilize these hooks and learn from them in order to implement my own logic. Since this involves pretty lower level stuff, proper documentation would be really great.
+ Developing Addon that is not presentational is really a harder process in Ember. The actual [API documentation](https://ember-cli.com/api/) for CLI is really not helpful to accomplish a task easily (TBH, that's impossible). I usually refer to other similar addons that utilize these hooks and learn from them in order to implement my own logic. Since this involves pretty low-level stuff, proper documentation would be really great.
 
 ## 4) Error Communication
 
-This is inspired from the Vue ecosystem. We are not great at communicating the errors to the developers. Once I hit a few issues, It's really hard to debug them and at least it requires considerable knowledge on the framework to identify and rectify them. When working with Vue, I feel the error communication was more elegant. In some cases, I just need to copy paste the suggested output from the console into my code to make it work. I can see that the error messages in Ember revamped constantly and it would be great if it is taken into account when building the roadmap for the upcoming year.
+This is inspired from the Vue ecosystem. We are not great at communicating the errors to the developers. Once I hit a few issues, it's really hard to debug them and at least it requires considerable knowledge on the framework to identify and rectify them. When working with Vue, I feel the error communication was more elegant. In some cases, I just need to copy paste the suggested output from the console into my code to make it work. I can see that the error messages in Ember revamped constantly and it will be great if it's taken into account when building the roadmap for the upcoming year.
 
 For a new developer, Googling the cause of the issue might be really overwhelming if the necessary context was not given and it might lead to churn.
 
@@ -47,7 +47,7 @@ For a new developer, Googling the cause of the issue might be really overwhelmin
 
 ### QueryParams
 
- This might be a little thing but its really not intuitive. I've seen in new developers while working with query params, that it is not obvious to them why we have to make an entry in different files and in different properties. I have to declare them in [controller](https://api.emberjs.com/ember/3.10/classes/Controller/properties/queryParams?anchor=queryParams) file and customize them in the corresponding [route](https://api.emberjs.com/ember/3.10/classes/Route/properties/queryParams?anchor=queryParams) file and TBH, I personally cannot justify why that is being implemented in such a way.
+ This might be a little thing but it's really not intuitive. I've seen in new developers while working with query params, that it is not obvious to them why we have to make an entry in different files and in different properties. I have to declare them in [controller](https://api.emberjs.com/ember/3.10/classes/Controller/properties/queryParams?anchor=queryParams) file and customize them in the corresponding [route](https://api.emberjs.com/ember/3.10/classes/Route/properties/queryParams?anchor=queryParams) file and TBH, I personally cannot justify why that is being implemented in such a way.
 
 ### Testing as a separate section in the tutorials
 
@@ -55,9 +55,9 @@ For a new developer, Googling the cause of the issue might be really overwhelmin
 
 ### Component composition and best practices
 
- Basic preaching of topics like "why we need components?" and "How a UI piece can be built using different component compositions" and maybe few prevailing anti-patterns would be really helpful. I accept most of these topics are heavily opinionated, but, it would great if we could document at least most acceptable one. Maybe in a section named, "Advanced Component Concepts" or something similar.
+ Basic preaching of topics like "why we need components?" and "How a UI piece can be built using different component compositions" and maybe few prevailing anti-patterns would be beneficial. I accept most of these topics are heavily opinionated, but, it would great if we could document at least the most acceptable one. Maybe in a section named, "Advanced Component Concepts" or something similar.
 
 
 ## 6) Ember CLI Presets or Proejct template
 
-This is a little nice to have functionality. I personally like the way Vue uses it's CLI. We can manually choose the features that we are going to use in our project, like TS or JS, Class-based component or Classic Components, Need Service worker or not from the CLI itself and the supporting packages will be installed by the CLI for us. Then we can save this as a preset and can be used in future projects. In Ember, we use `features` json to modify these settings and it would be cool to have this integrated with the CLI service itself.
+This is a little nice to have functionality. I personally like the way Vue uses it's CLI. We can manually choose the features that we are going to use in our project, like TS or JS, Class-based component or Classic Components, Need Service workers or not from the CLI itself and the supporting packages will be installed by the CLI for us. Then we can save this as a preset and can be used in future projects. In Ember, we use `features` json to modify these settings and it would be cool to have this integrated with the CLI service itself.
