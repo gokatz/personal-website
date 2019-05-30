@@ -58,6 +58,6 @@ For a new developer, Googling the cause of the issue might be really overwhelmin
  Basic preaching of topics like "why we need components?" and "How a UI piece can be built using different component compositions" and maybe few prevailing anti-patterns would be beneficial. I accept most of these topics are heavily opinionated, but, it would great if we could document at least the most acceptable one. Maybe in a section named, "Advanced Component Concepts" or something similar.
 
 
-## 6) Ember CLI Presets or Proejct template
+## 6) Ember CLI Presets or Project template
 
 This is a little nice to have functionality. I personally like the way Vue uses it's CLI. We can manually choose the features that we are going to use in our project, like TS or JS, Class-based component or Classic Components, Need Service workers or not from the CLI itself and the supporting packages will be installed by the CLI for us. Then we can save this as a preset and can be used in future projects. In Ember, we use `features` json to modify these settings and it would be cool to have this integrated with the CLI service itself.
