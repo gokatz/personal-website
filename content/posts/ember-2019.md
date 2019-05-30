@@ -14,7 +14,7 @@ description: "My list of features and improvements that I love to see in Ember c
 
 This is the first time I'm participating in the Ember roadmap blog post series. I personally like Ember and it's abstractions to enable and increase productivity.
 
-In order to write this blog, I curated a list of things WRT documentation and communication in the ecosystem that can be improved. On checking the docs and guides, I'm stunned that most of those points are already addressed in the Guides and API docs. That's excellent to know. Thanks to all the core teams and the contributors.
+In order to write this blog, I curated a list of things WRT documentation and communication in the ecosystem that can be improved. On checking the docs and guides, **I'm stunned that most of those points are already addressed** in the Guides and API docs. That's excellent to know. Thanks to all the core teams and the contributors.
 
 Below is a list of few things that I love to see in the core framework and surrounding ecosystems in the coming years.
 
