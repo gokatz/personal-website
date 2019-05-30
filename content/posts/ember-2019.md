@@ -28,7 +28,7 @@ There are cases where I had to leave behind Ember for this reason despite Ember 
 
 ## 2) Embroider
 
- I personally think we were hanging too much with specialized build took that built around broccoli for a long time. Experimenting with existing popular toolkits like Webpack with Embroider is so cool and the features that other framework users enjoying such as HMR, Code Splitting at various levels (route, component, etc.,) can be brought in to the ember ecosystem with Embroider. I love to see embroider being the default built tool in 2019.
+ I personally think we were hanging too much with specialized build tool that built around broccoli for a long time. Experimenting with existing popular toolkits like Webpack with Embroider is so cool and the features that other framework users enjoying such as HMR, Code Splitting at various levels (route, component, etc.,) can be brought in to the ember ecosystem with Embroider. I love to see embroider being the default built tool in 2019.
 
 ## 3) Docs around Ember CLI and Broccoli internals
 
