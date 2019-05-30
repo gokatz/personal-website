@@ -1,5 +1,5 @@
 ---
-title: "EmberJS in 2019 (#EmberJS2019)"
+title: "EmberJS in 2019"
 date: "2019-05-30T10:00:32.169Z"
 template: "post"
 draft: false
@@ -11,8 +11,6 @@ tags:
   - "CI/CD"
 description: "My list of features and improvements that I love to see in Ember core framework in 2019"
 ---
-
-# EmberJS in 2019 #EmberJS2019
 
 This is the first time I'm participating in Ember roadmap blog post series.
 I personally like Ember and it's reasonable abstractions to enable and increase productivity out of the box.
@@ -60,3 +58,6 @@ Basic preaching of topics like "why we need components?" and "How UI pieces can 
 
 I personally like the way Vue uses it's CLI. We can manually choose the features that we are going to use in our projects, like TS or JS, Class-based component or Classic Components, Need Service worker or not from the CLI itself and the supporting packages will be installed by the CLI for us. Then we can save this as a preset and can be used in future projects. In Ember, we use `features` json to modify these settings and it would be cool to have this integrated with the CLI service itself.
 
+## 6) Error Communication
+
+Again this is inspired from Vue ecosystem. Ember is not great at communicating the errors to the developers. Once I hit an few issues, It's really hard to debug them and atleast requires a considerable knowledge on the frameowrk to identify and rectify the issue. When working with Vue, I feel the error communication to be more elegant. In some cases, I just need to copy paste the suggested output to make it work. I can see the error messages revamped constanly and I love this to be taken into account when building the roadmap for the upcoming year. A new developer
