@@ -1,0 +1,9 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+.workingon {
+    @include margin-bottom(1);
+    border-left: 4px solid $color-secondary;
+    padding: 10px 15px;
+    background: #fff6ed;
+}

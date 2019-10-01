@@ -3,6 +3,7 @@ import { graphql, StaticQuery } from 'gatsby';
 import Author from './Author';
 import Contacts from './Contacts';
 import Copyright from './Copyright';
+import WorkingOn from './WorkingOn';
 import Menu from './Menu';
 import styles from './Sidebar.module.scss';
 
@@ -18,6 +19,7 @@ export const PureSidebar = ({ data, isIndex }) => {
       <div className={styles['sidebar__inner']}>
         <Author author={author} isIndex={isIndex} />
         <Menu menu={menu} />
+        <WorkingOn />
         <Contacts contacts={author.contacts} />
         <Copyright copyright={copyright} />
       </div>
@@ -42,7 +44,7 @@ export const Sidebar = (props) => (
               name
               photo
               bio
-              contacts {       
+              contacts {
                 twitter
                 github
                 email
