@@ -7,6 +7,9 @@ const WorkingOn = () => (
     <div>
         <a href="https://ember-migration-helper.web.app" target="_blank">Ember Migration Helper</a>
     </div>
+    <div>
+        <a href="https://github.com/gokatz/ua-parser-extension/" target="_blank">UA Parser Extension</a>
+    </div>
   </div>
 );
 
