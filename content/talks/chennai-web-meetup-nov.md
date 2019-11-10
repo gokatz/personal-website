@@ -9,7 +9,7 @@ links:
     link: https://www.meetup.com/Chennai-Web-Meetup/events/264869798/
   - title: Slides
     link: https://slides.com/gokatz/a-gentle-into-to-spa-router
-  - title: Demo Code
-    link: https://github.com/gokatz/spa-router-demo/
+  - title: Video
+    link: https://fccdl.in/PQxiM9RoE9
 description: "A brief introduction of how routing is done in single page applications (SPA) and how to build a minimal SPA router from scratch."
 ---
