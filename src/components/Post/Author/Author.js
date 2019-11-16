@@ -9,7 +9,7 @@ export const PureAuthor = ({ data }) => {
   return (
     <div className={styles['author']}>
       <p className={styles['author__bio']}>
-        {author.bio}
+        A fellow human 💕 Love building things over web... 💕 doing Ember and Vue <a href="https://twitter.com/zoho" target="_blank">@zoho</a>! Curated <a href="https://twitter.com/emberjstweet" target="_blank">@emberjstweet</a> 🐹🤖 with 🔥
         <a
           className={styles['author__bio-twitter']}
           href={getContactHref('twitter', author.contacts.twitter)}
