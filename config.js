@@ -25,6 +25,10 @@ module.exports = {
     {
       label: 'Talks',
       path: '/talks'
+    },
+    {
+      label: 'TIL 💡',
+      path: '/til'
     }
     // {
     //   label: 'Profile',

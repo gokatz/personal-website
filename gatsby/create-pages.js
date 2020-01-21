@@ -72,6 +72,12 @@ const createPages = async ({ graphql, actions }) => {
   });
 
   createPage({
+    path: '/til',
+    component: path.resolve('./src/templates/til-template.js'),
+    context: { slug: '/til' }
+  });
+
+  createPage({
     path: '/talks',
     component: path.resolve('./src/templates/talks-template.js'),
     context: { slug: '/talks' }
