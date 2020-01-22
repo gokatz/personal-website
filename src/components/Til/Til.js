@@ -30,7 +30,7 @@ const TIL = ({ edges }) => (
         <div className={styles['item']}>
           <h3> {title} </h3>
           <div dangerouslySetInnerHTML={{ __html: html }}></div> 
-          <p> {emoji} <b>Learnt From <a href={learntFrom.link} target="_blank" rel="noreferrer"> {learntFrom.label} </a> </b> on {moment(date).format('D MMM YYYY')} </p> 
+          <p> {emoji} <b>Learned From <a href={learntFrom.link} target="_blank" rel="noreferrer"> {learntFrom.label} </a> </b> on {moment(date).format('D MMM YYYY')} </p> 
         </div>
       )
     })}
