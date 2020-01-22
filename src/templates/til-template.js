@@ -27,7 +27,7 @@ const TILTemplate = ({ data, pageContext }) => {
     return `${summary}, ${fMatter.title}`;
   }, '');
 
-  const pageDescription = `Gokul Kathirvel loves to learn daily. Here are the few things learned on the daily basis`;
+  const pageDescription = `Gokul Kathirvel loves to learn daily. Here goes the list of TILs (Today I learned) of Gokul Kathirvel`;
 
   return (
     <Layout title={pageTitle} description={pageDescription}>
