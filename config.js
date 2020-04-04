@@ -26,10 +26,10 @@ module.exports = {
       label: 'Talks',
       path: '/talks'
     },
-    {
-      label: 'TIL 💡',
-      path: '/til'
-    }
+    // {
+    //   label: 'TIL 💡',
+    //   path: '/til'
+    // }
     // {
     //   label: 'Profile',
     //   path: '/profile'
