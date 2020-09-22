@@ -4,6 +4,7 @@ import Author from './Author';
 import Contacts from './Contacts';
 import Copyright from './Copyright';
 import WorkingOn from './WorkingOn';
+import ProductHunt from './ProductHunt';
 import Menu from './Menu';
 import styles from './Sidebar.module.scss';
 
@@ -19,7 +20,8 @@ export const PureSidebar = ({ data, isIndex }) => {
       <div className={styles['sidebar__inner']}>
         <Author author={author} isIndex={isIndex} />
         <Menu menu={menu} />
-        <WorkingOn />
+        {/* <WorkingOn /> */}
+        <ProductHunt />
         <Contacts contacts={author.contacts} />
         <Copyright copyright={copyright} />
       </div>
