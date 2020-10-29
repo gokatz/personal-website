@@ -24,7 +24,7 @@ const Author = ({ author, isIndex }) => (
       </h2>
     )}
     <p className={styles['author__subtitle']}>
-      A fellow human 💕 Love building things over web... 💕 doing Ember and Vue <a href="https://twitter.com/zoho" target="_blank">@zoho</a>! Curated <a href="https://twitter.com/emberjstweet" target="_blank">@emberjstweet</a> 🐹🤖 with 🔥
+      A fellow human 💕 Love building things over web... 💕 doing Ember 🐹 and React ⚛️ <a href="https://twitter.com/zoho" target="_blank">@zoho</a>! Curated <a href="https://twitter.com/emberjstweet" target="_blank">@emberjstweet</a> 🐹🤖 with 🔥
     </p>
   </div>
 );
