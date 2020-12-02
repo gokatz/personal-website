@@ -28,6 +28,9 @@ const getIcon = (name) => {
     case 'devto':
       icon = ICONS.DEVTO;
       break;
+    case 'stackoverflow':
+      icon = ICONS.STACKOVERFLOW;
+      break;
     default:
       icon = {};
       break;

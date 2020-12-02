@@ -17,6 +17,9 @@ const getContactHref = (name, contact) => {
     case 'devto':
       href = `https://dev.to/${contact}`;
       break;
+    case 'stackoverflow':
+      href = `https://stackoverflow.com/users/${contact}?tab=profile`;
+      break;
     default:
       href = contact;
       break;

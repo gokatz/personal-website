@@ -44,7 +44,8 @@ module.exports = {
       twitter: '_gokatz',
       github: 'gokatz',
       linkedin: 'in/gokulkathirvel',
-      devto: 'gokatz'
+      devto: 'gokatz',
+      stackoverflow: '5816277/gokul-kathirvel'
     }
   }
 };
