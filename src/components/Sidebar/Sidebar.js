@@ -23,7 +23,7 @@ export const PureSidebar = ({ data, isIndex }) => {
         {/* <WorkingOn /> */}
         <div style={{ marginBottom: '2rem' }}>
           <a href="https://www.codementor.io/@gokatz?refer=badge" target="_blank" rel="noopener noreferrer">
-            <img src="https://www.codementor.io/m-badges/gokatz/im-a-cm-b.svg" alt="Codementor badge" />
+            <img src="https://www.codementor.io/m-badges/gokatz/find-me-on-cm-b.svg" alt="Codementor badge" />
           </a>
         </div>
         <ProductHunt />
