@@ -21,11 +21,11 @@ export const PureSidebar = ({ data, isIndex }) => {
         <Author author={author} isIndex={isIndex} />
         <Menu menu={menu} />
         {/* <WorkingOn /> */}
-        <div style={{ marginBottom: '2rem' }}>
+        {/* <div style={{ marginBottom: '2rem' }}>
           <a href="https://www.codementor.io/@gokatz?refer=badge" target="_blank" rel="noopener noreferrer">
             <img src="https://www.codementor.io/m-badges/gokatz/find-me-on-cm-b.svg" alt="Codementor badge" />
           </a>
-        </div>
+  </div> */}
         <ProductHunt />
         <Contacts contacts={author.contacts} />
         <Copyright copyright={copyright} />
