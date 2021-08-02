@@ -1,6 +1,6 @@
 ---
 title: "I'm back on track and you should too!"
-date: "2021-01-25T10:00:32.169Z"
+date: "2021-07-25T10:00:32.169Z"
 template: "post"
 draft: false
 slug: "/blog/back-on-track-2021/"
