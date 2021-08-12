@@ -10,8 +10,6 @@ conf_name: Awesome Conf 2019
 #   - "Handwriting"
 #   - "Learning to write"
 links:
-  - title: Conference Home
-    link: https://awesomeconf.dev
   - title: Slides
     link: https://slides.com/gokatz/ember-and-vue/
 description: "A talk on how Ember and Vue utilize the native features and share concepts and even syntaxes along with a demo of how simple to jump between them without much friction by building a counter component. Awesome conf was really a great start for me to be a speaker being a mediocre introvert."
