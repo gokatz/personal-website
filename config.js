@@ -38,7 +38,7 @@ module.exports = {
   author: {
     name: 'Gokul Kathirvel',
     photo: '/photo.jpg',
-    bio: 'A fellow human 💕 Love building things over web... 💕 doing Ember and Vue @zoho!!! Curated @emberjstweet 🐹🤖 with 🔥',
+    bio: 'A fellow human 💕 Love building things over web... 💕 doing Ember and Vue @coinbase!!! Curated @emberjstweet 🐹🤖 with 🔥',
     contacts: {
       email: 'gokulkathirvel@live.com',
       twitter: '_gokatz',
