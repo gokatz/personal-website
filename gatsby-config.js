@@ -125,6 +125,14 @@ module.exports = {
       resolve: 'gatsby-plugin-google-analytics',
       options: { trackingId: siteConfig.googleAnalyticsId }
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-GTFBY14JXB"
+        ],
+      }
+    },
     // 'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-sitemap',
