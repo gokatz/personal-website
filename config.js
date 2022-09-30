@@ -1,10 +1,12 @@
 'use strict';
 
+const subtitle = 'gokatz.eth. A fellow human 🤗 love building things over web 💕 Doing React Coinbase ₿. Passionate about Web performance, React and Ember. Prev: Zoho'
+
 module.exports = {
   url: 'https://gokatz.me',
   title: 'Gokul Kathirvel',
-  subtitle: 'A fellow human 💕 Love building things over web... 💕 doing Ember and Vue @zoho!!! Curated @emberjstweet 🐹🤖 with 🔥',
-  // copyright: '© All rights reserved.',
+  subtitle,
+  // copyright: '© All rights reserved.', 
   copyright: '',
   disqusShortname: 'gokatz',
   postsPerPage: 5,
@@ -38,7 +40,7 @@ module.exports = {
   author: {
     name: 'Gokul Kathirvel',
     photo: '/photo.jpg',
-    bio: 'A fellow human 💕 Love building things over web... 💕 doing Ember and Vue @coinbase!!! Curated @emberjstweet 🐹🤖 with 🔥',
+    bio: subtitle,
     contacts: {
       email: 'gokulkathirvel@live.com',
       twitter: '_gokatz',

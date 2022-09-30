@@ -1,6 +1,7 @@
 import React from 'react';
 import { withPrefix, Link } from 'gatsby';
 import styles from './Author.module.scss';
+import Bio from '../../Common/Bio';
 
 const Author = ({ author, isIndex }) => (
   <div className={styles['author']}>
@@ -24,7 +25,7 @@ const Author = ({ author, isIndex }) => (
       </h2>
     )}
     <p className={styles['author__subtitle']}>
-      A fellow human 💕 Love building things over web... 💕 doing Ember 🐹 and React ⚛️ <a href="https://twitter.com/zoho" target="_blank">@zoho</a>! Curated <a href="https://twitter.com/emberjstweet" target="_blank">@emberjstweet</a> 🐹🤖 with 🔥
+      <Bio />
     </p>
   </div>
 );
