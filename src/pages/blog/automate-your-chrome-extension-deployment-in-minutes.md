@@ -30,7 +30,7 @@ As a chrome extension authors, you may be aware of the following release steps.
 
 I'm going to code the automating script using node. So, let's create a node file (`deploy.js`) in the root directory to invoke it from the CI environment using `gitlab-ci.yml` file.
 
-###zipping the extension folder:
+### zipping the extension folder:
 
 Using the [zip-folder](https://www.npmjs.com/package/zip-folder) package, zipping will be only a command away! 
 
@@ -51,7 +51,7 @@ zipFolder(folderName, zipName, function(err) {
 ```
 Woohoo! You Done zipping your extension 🤟🏻Add this to your `deploy.js` file.
 
-###uploading to chrome web store:
+### uploading to chrome web store:
 
 Here comes the another package, [chrome-webstore-upload](https://github.com/DrewML/chrome-webstore-upload). With the help of this package, we can upload the zipped extension to the chrome web store. 
 
@@ -129,7 +129,7 @@ As I promised, sample `deploy.js` file is as follow! Keep it as a reference. Get
 
 {% gist https://gist.github.com/gokatz/b99c36c74a0b0f219f3c3e4096e7d26d %}
 
-####hi-fi 🙏 
+#### hi-fi 🙏 
 
 Now it’s time to invoke those script from the `gitlab-ci.yml` file. This is a sample ci file I'm using (to be invoked in GitLab CI environment)
 

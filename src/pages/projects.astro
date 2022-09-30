@@ -3,11 +3,12 @@
 import Home from '../layouts/Home.astro';
 import MansionTile from '../components/MansionTile.astro';
 import PageTitleForMobile from '../components/PageTitleForMobile.astro';
+import { MarkdownFrontmatter } from './index.astro';
 
 // Data Fetching: List all Markdown posts in the repo.
 
-let allProjects = await Astro.fetchContent('./projects/*.md');
-allProjects = allProjects.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
+let allProjects = await Astro.glob<MarkdownFrontmatter>('./projects/*.md');
+allProjects = allProjects.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
 ---
 
 <Home>

@@ -1,9 +1,8 @@
 import { defineConfig } from 'astro/config';
+import preact from '@astrojs/preact';
 
 // https://astro.build/config
 export default defineConfig({
-	renderers: ['@astrojs/renderer-preact'],
-	buildOptions: {
-		site: 'https://gokatz.me/',
-	},
+	integrations: [preact()], 
+	site: 'https://gokatz.me/'
 });
