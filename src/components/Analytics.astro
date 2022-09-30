@@ -1,0 +1,14 @@
+---
+// To use in the src of the script tag
+import siteData from '../data';
+---
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src={`https://www.googletagmanager.com/gtag/js?id=${siteData.gaId}`}></script>
+<script define:vars={{ gaId: siteData.gaId }}>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', gaId);
+</script>

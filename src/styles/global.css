@@ -1,0 +1,80 @@
+/* src/styles/global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-size: Inter,-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif;
+}
+
+.intro a {
+  color: white;
+}
+
+.root {
+  max-width: 1440px;
+}
+
+.wrapper {
+  max-width: 900px;
+}
+
+.tile {
+  transition: all .2s ease-in-out;
+}
+
+.tile:hover {
+  transform: scale(1.1) !important;
+}
+
+@media (min-width: 900px) {
+  .tile.mansion-tile:hover:nth-child(odd) {
+    /*
+      handled translate here as while hovering
+      this will override mansion-tile's translateY
+    */
+    transform: translateY(-30px) scale(1.1) !important;
+  }  
+}
+
+.font-monospace {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.image-title a {
+  text-decoration: underline;
+}
+
+.social-icons svg {
+  width: 18px;
+  margin-right: 8px;
+}
+
+.content-group:hover .tile {
+  opacity: 0.5;
+}
+
+.content-group .tile:hover {
+  opacity: 1;
+}
+
+.link-line-design {
+  position: relative;
+}
+
+.link-line-design::after {
+  content: " ";
+  position: absolute;
+  /* .bg-primary-blue */
+  background-color: #676cdb; 
+  height: 0;
+  bottom: -1px;
+  left: 6px;
+  z-index: -1;
+  transition: all 0.1s ease-in-out;
+}
+
+.link-line-design:hover:after {
+  height: 13px;
+  width: 100%;
+}

@@ -1,0 +1,23 @@
+---
+// Component Imports
+import Home from '../layouts/Home.astro';
+import MansionTile from '../components/MansionTile.astro';
+import PageTitleForMobile from '../components/PageTitleForMobile.astro';
+import { MarkdownFrontmatter } from './index.astro';
+
+// Data Fetching: List all Markdown posts in the repo.
+
+let allOSSProjects = await Astro.glob<MarkdownFrontmatter>('./oss/*.md');
+allOSSProjects = allOSSProjects.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
+---
+
+<Home>
+	<PageTitleForMobile title="OSS" />
+	<div class="flex flex-wrap">
+		{
+			allOSSProjects.map((project) => {
+				return <MansionTile content={project} /> 
+			})
+		}
+	</div>
+</Home>
