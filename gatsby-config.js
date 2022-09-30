@@ -125,6 +125,7 @@ module.exports = {
       resolve: 'gatsby-plugin-google-analytics',
       options: { trackingId: siteConfig.googleAnalyticsId }
     },
+    // 'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
@@ -150,11 +151,15 @@ module.exports = {
           }
         `,
         output: '/sitemap.xml',
-        serialize: ({ site, allSitePage }) => allSitePage.edges.map((edge) => ({
-          url: site.siteMetadata.url + edge.node.path,
-          changefreq: 'daily',
-          priority: 0.7
-        }))
+        serialize: ({ site, allSitePage }) => {
+          return allSitePage.edges.map((edge) => {
+            return ({
+              url: site.siteMetadata.siteUrl + edge.node.path,
+              changefreq: 'daily',
+              priority: 0.7
+            })
+          })
+        }
       }
     },
     {
