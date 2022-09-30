@@ -1,0 +1,32 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Analytics from '../components/Analytics.astro';
+// import InstantLoader from '../components/InstantLoader.astro';
+import siteData from '../data';
+
+const { 
+	title = siteData.siteName, 
+	description = siteData.siteDescription, 
+	permalink = siteData.permalink, 
+	canonical
+} = Astro.props;
+
+---
+
+<html lang="en">
+	<head>
+		<BaseHead 
+			title={title} 
+			description={description} 
+			permalink={permalink} 
+			{canonical}
+		/>
+	</head>
+
+	<body data-no-instant>
+		<slot />
+
+		<Analytics />
+		<!-- <InstantLoader /> -->
+	</body>
+</html>

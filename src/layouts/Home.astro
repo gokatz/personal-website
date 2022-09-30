@@ -1,0 +1,64 @@
+---
+import Shell from './Shell.astro';
+import Intro from '../components/Intro.astro';
+import NavLink from '../components/NavLink.astro';
+import Footer from '../components/Footer.astro';
+
+const links = [{
+	title: 'Blogs',
+	url: '/'
+}, {
+	title: 'Projects',
+	url: '/projects'
+}, {
+	title: 'OSS Love',
+	url: '/oss'
+}, {
+	title: 'Talks',
+	url: '/talks'
+}];
+
+const { isIndexPage } = Astro.props;
+
+---
+<Shell>
+	<div class="flex flex-col md:flex-row justify-between root mx-auto relative">
+		<div 
+			class="w-full md:w-2/5 md:h-screen 
+				p-10 md:pr-0 md:py-20 md:pl-20 
+				md:fixed
+				flex flex-col md:justify-between"
+		>
+			
+			<div>
+				<Intro />
+				<div class="mt-14 font-monospace">
+					{links.map((nav, index) => <NavLink nav={nav} serial={index} />)}
+				</div>
+			</div>
+
+			<Footer />
+		</div>
+
+		<div class="md:w-3/5 pt-0 md:absolute md:right-0 p-6 md:p-20" id="page-content">
+			<div class="content-group" data-instant>
+				<slot />
+			</div>
+		</div>
+	</div>
+</Shell>
+
+<script define:vars={{ isIndexPage }}>
+	let oneColumnLayout = window.matchMedia('(max-width: 767px)');
+
+	if (!isIndexPage && oneColumnLayout.matches) {
+		var element = document.getElementById("page-content");
+		element.scrollIntoView({behavior: "smooth", inline: "nearest"});	
+	}
+</script>
+
+<style>
+body {
+	background-color: #151515;
+}
+</style>
