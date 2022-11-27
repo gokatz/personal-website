@@ -7,6 +7,7 @@ import WorkingOn from './WorkingOn';
 import ProductHunt from './ProductHunt';
 import Menu from './Menu';
 import styles from './Sidebar.module.scss';
+import BuyMeACoffee from './BuyMeACoffee';
 
 export const PureSidebar = ({ data, isIndex }) => {
   const {
@@ -27,6 +28,7 @@ export const PureSidebar = ({ data, isIndex }) => {
           </a>
   </div> */}
         <ProductHunt />
+        <BuyMeACoffee />
         <Contacts contacts={author.contacts} />
         <Copyright copyright={copyright} />
       </div>
